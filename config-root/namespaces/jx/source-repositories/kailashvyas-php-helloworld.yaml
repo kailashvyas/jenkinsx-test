@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: kailashvyas
+    provider: github
+    repository: php-helloworld
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: kailashvyas-php-helloworld
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/kailashvyas/php-helloworld.git
+  org: kailashvyas
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: php-helloworld
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/kailashvyas/php-helloworld
